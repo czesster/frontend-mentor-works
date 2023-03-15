@@ -1,9 +1,11 @@
-function App() {
+import ResultsSummary from "./components/ResultsSummary";
+
+const App = () => {
   return (
     <div>
-      <h2>Let's get started</h2>
+      <ResultsSummary />
     </div>
   );
-}
+};
 
 export default App;
