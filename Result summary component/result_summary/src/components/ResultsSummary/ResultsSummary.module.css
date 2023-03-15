@@ -1,11 +1,15 @@
 .results__background {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     margin: 50vh auto;
     transform: translateY(-50%);
-    width:50rem;
-    height: 30rem;
+
+    width:70rem;
+    height: 50rem;
+
     background-color: hsl(0, 0%, 100%);
+
     border-radius: 2.4rem;
     box-shadow: 1rem 1rem 3.8rem 1rem hsl(221, 100%, 96%);
 }

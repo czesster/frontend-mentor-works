@@ -1,4 +1,4 @@
-import ResultsSummary from "./components/ResultsSummary";
+import ResultsSummary from "./components/ResultsSummary/ResultsSummary";
 
 const App = () => {
   return (
