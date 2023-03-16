@@ -81,3 +81,7 @@
   border: none;
   border-radius: 10rem;
 }
+
+.summary button:active {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
