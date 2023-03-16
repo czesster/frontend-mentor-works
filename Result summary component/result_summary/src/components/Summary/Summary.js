@@ -5,10 +5,31 @@ import verbal from "../../assets/images/icon-verbal.svg";
 import visual from "../../assets/images/icon-visual.svg";
 
 const Summary = (props) => {
+  const getIconName = (url) => {
+    return url.split("-")[1].split(".")[0];
+  };
+
   return (
     <div className={styles.summary}>
       <p className={styles.summary__title}>Summary</p>
       <ul>
+        {props.data.results.map((el) => {
+          return (
+            <li key={el.id}>
+              <img
+                src="../../assets/images/icon-reaction.svg"
+                alt={`${getIconName(el.icon)} icon`}
+              />
+              <p>{el.category}</p>
+              <p className={styles.summary__score}>
+                <span className={styles.score__value}>{el.score}</span>
+                <span className={styles.score__of}> / 100</span>
+              </p>
+            </li>
+          );
+        })}
+      </ul>
+      {/* <ul>
         <li>
           <img src={reaction} alt="reaction icon" />
           <p>Reaction</p>
@@ -41,7 +62,7 @@ const Summary = (props) => {
             <span className={styles.score__of}> / 100</span>
           </p>
         </li>
-      </ul>
+      </ul> */}
       <button>Continue</button>
     </div>
   );

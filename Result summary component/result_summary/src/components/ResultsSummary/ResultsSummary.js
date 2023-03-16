@@ -5,8 +5,8 @@ import styles from "./ResultsSummary.module.css";
 const ResultsSummary = (props) => {
   return (
     <div className={styles["results__background"]}>
-      <YourResult />
-      <Summary />
+      <YourResult data={props.data} />
+      <Summary data={props.data} />
     </div>
   );
 };
