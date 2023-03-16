@@ -1,18 +1,17 @@
 .results__background {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-    margin: 50vh auto;
-    transform: translateY(-50%);
+  margin: 50vh auto;
+  transform: translateY(-50%);
 
-    font-family: HankenGrotest;
-    font-size: 62.5%;
+  font-family: HankenGrotest;
+  font-size: 62.5%;
 
-    width:70rem;
-    height: 50rem;
+  max-width: 70rem;
 
-    background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 
-    border-radius: 2.4rem;
-    box-shadow: 1rem 1rem 3.8rem 1rem hsl(221, 100%, 96%);
+  border-radius: 2.4rem;
+  box-shadow: 1rem 1rem 3.8rem 1rem hsl(221, 100%, 96%);
 }
